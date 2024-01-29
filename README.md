@@ -1,4 +1,4 @@
-# La_Salumeria_CDUI
+# La Salumeria CDUI
 TD en groupe : La Salumeria
 
 Stéphane, Sébastien et David.
