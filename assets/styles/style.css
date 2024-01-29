@@ -1,4 +1,4 @@
-/* Reset */
+/** Reset **/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,28 +6,111 @@
 }
 
 
-/* Variables */
+/** Variables **/
 :root {
-    --salumeria-red: #850A0F;
-    --salumeria-red-alpha: rgba(133, 10, 15, 0.7);
-    --salumeria-green: #1C562C;
-    --salumeria-red-alpha: rgba(28, 86, 44, 0.7);
     --salumeria-black: #161615;
+    --salumeria-green: #1C562C;
+    --salumeria-green-alpha: rgba(28, 86, 44, 0.7);
+    --salumeria--grey: #F4F4F4;
+    --salumeria-red: #850A0F;
+    --salumeria-red-alpha: rgba(133, 10, 15, 0.7);    
     --salumeria-title: "Bodoni Moda", serif;
     --salumeria-text: "Italiana", sans-serif;
+    --salumeria-white: #FFFFFF;
 }
 
 
-/* Fonts */
-/*
+/** Fonts **/
+* {
     font-family: "Bodoni Moda", serif;
-    font-family: "Italiana", sans-serif;
-*/
+}
 
 
-/* Exemple */
-/*
-h1 {
+/** General **/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/** Link **/
+.link {
+    color: var(--salumeria-black);
+    text-decoration: none;
+}
+.link:hover {
     color: var(--salumeria-red);
-    font-family: var(--salumeria-title);
-*/
+}
+
+
+/** Header **/
+.header__block {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+    width: 90vw;
+}
+
+/* Logo */
+.header__logo {
+    object-fit: contain;
+    width: 300px;
+}
+
+/* Navigation */
+.nav__mobile_logo {
+    display: flex;
+    width: 35px;
+}
+
+.nav__list {
+    display: none;
+}
+
+
+/** Main **/
+.main__block {
+    flex: 1 0 auto;
+}
+
+
+/** Footer **/
+.footer__block {
+    align-content: center;
+    background-color: var(--salumeria--grey);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 5vw;
+    width: 100%;
+}
+
+/* Social media */
+.footer__socials_link {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.footer__socials_logo {
+    height: 40px;
+    width: 40px;
+}
+
+/* Informations */
+.footer__informations {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    width: 100%;
+}
