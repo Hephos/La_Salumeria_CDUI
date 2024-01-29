@@ -1,0 +1,33 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Variables */
+:root {
+    --salumeria-red: #850A0F;
+    --salumeria-red-alpha: rgba(133, 10, 15, 0.7);
+    --salumeria-green: #1C562C;
+    --salumeria-red-alpha: rgba(28, 86, 44, 0.7);
+    --salumeria-black: #161615;
+    --salumeria-title: "Bodoni Moda", serif;
+    --salumeria-text: "Italiana", sans-serif;
+}
+
+
+/* Fonts */
+/*
+    font-family: "Bodoni Moda", serif;
+    font-family: "Italiana", sans-serif;
+*/
+
+
+/* Exemple */
+/*
+h1 {
+    color: var(--salumeria-red);
+    font-family: var(--salumeria-title);
+*/
