@@ -236,11 +236,44 @@ body {
     background-color: var(--salumeria-red);
     color: var(--salumeria-white);
 }
+.btn--product:hover {
+    color: var(--salumeria-red);
+}
 
 
 /** Teams **/
 #teams > .section__heading {
     padding-top: 0;
+}
+
+.team__photography {
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.team__name {
+    background-color: var(--salumeria-red);
+    color: var(--salumeria-yellow);
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 75px;
+    width: fit-content;  
+}
+
+.team__quote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.team__tip {
+    color: var(--salumeria-green);
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 
