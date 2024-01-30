@@ -9,6 +9,7 @@
 /** Variables **/
 :root {
     --salumeria-black: #161615;
+    --salumeria-black-alpha: #000000DD;
     --salumeria-green: #1C562C;
     --salumeria-green-alpha: rgba(28, 86, 44, 0.7);
     --salumeria-red: #850A0F;
@@ -189,11 +190,20 @@ body {
     z-index: -1;
 }
 
+.products__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    margin-bottom: 25px;
+}
+
 /* Product - Header */
 .product__header {
     position: relative;
 }
+
 .product__image {
+    display: flex;
     width: 100%;
 }
 
@@ -204,12 +214,33 @@ body {
     position: absolute;
     right: 25px;
     top: 25px;
+    background-color: var(--salumeria-black-alpha);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/* Product - Footer */
+.product__footer {
+    background-color: var(--salumeria-yellow);
+    padding: 20px;
+    text-align: center;
+}
+
+.product__description {
+    width: 80%;
+    margin: auto;
 }
 
 /* Product - Button */
 .btn--product {
     background-color: var(--salumeria-red);
     color: var(--salumeria-white);
+}
+
+
+/** Teams **/
+#teams > .section__heading {
+    padding-top: 0;
 }
 
 
