@@ -57,7 +57,7 @@ body {
 /* Logo */
 .header__logo {
     object-fit: contain;
-    width: 250px;
+    width: 225px;
 }
 
 /* Navigation */
@@ -84,6 +84,7 @@ body {
 
 .banner__image {
     height: 100vh;
+    max-height: 500px;
     object-fit: cover;
     width: 100%;
 }
@@ -133,8 +134,7 @@ body {
 /* Social media */
 .footer__socials_link {
     display: flex;
-    gap: 25px;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -148,8 +148,8 @@ body {
 .footer__informations {
     align-content: center;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    gap: 15px 0;
+    gap: 10px 0;
+    justify-content: space-around;
     width: 100%;
 }
