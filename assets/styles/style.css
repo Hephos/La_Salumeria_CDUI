@@ -42,8 +42,9 @@ body {
 .section__heading {
     font-size: 32px;
     font-weight: normal;
-    margin: 20px 40px;
+    margin: 10px auto;
     padding-top: 25px;
+    width: 85vw;
 }
 
 
@@ -145,14 +146,32 @@ body {
 .container__block {
     margin: auto;
     padding: 20px 0;
-    width: 90vw;
+    width: 85vw;
+}
+
+
+/** Grocery **/
+.grocery__image {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.grocery__heading {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.grocery__description:first-of-type {
+    margin-bottom: 20px;
 }
 
 
 /** Contact **/
 #contact {
     background-color: var(--salumeria-yellow);
-    padding-bottom: 30px
+    padding-bottom: 40px
 }
 #contact > .container__block {
     background-color: var(--salumeria-white);
@@ -162,12 +181,12 @@ body {
 .contact__infos {
     display: flex;
     flex-direction: column;
+    font-size: 18px;
     gap: 15px;
     text-align: center;
 }
 
 .contact__address {
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -190,8 +209,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px 0;
-    padding: 0 5vw;
-    width: 90vw;
+    padding: 0 5%;
 }
 
 .contact__label {
