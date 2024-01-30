@@ -60,12 +60,16 @@ body {
 
 /** Buttons **/
 .btn {
+    align-items: center;
     border: none;
     border-radius: 5px;
+    display: flex;
     font-size: 16px;
     height: 50px;
+    justify-content: center;
     margin: auto;
     padding: 5px 20px;
+    text-decoration: none;
     transition: 0.5s;
     width: 250px;
 }
@@ -165,6 +169,47 @@ body {
 
 .grocery__description:first-of-type {
     margin-bottom: 20px;
+}
+
+
+/** Products **/
+#products {
+    position: relative;
+}
+
+#products > .section__heading {
+    color: var(--salumeria-white);
+}
+
+.product__background {
+    background-color: var(--salumeria-red);
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Product - Header */
+.product__header {
+    position: relative;
+}
+.product__image {
+    width: 100%;
+}
+
+.product__image_name {
+    color: var(--salumeria-yellow);
+    font-size: 24px;
+    font-style: italic;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+/* Product - Button */
+.btn--product {
+    background-color: var(--salumeria-red);
+    color: var(--salumeria-white);
 }
 
 
