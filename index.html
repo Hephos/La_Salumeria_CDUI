@@ -43,14 +43,52 @@
         <div class="main__banner">
             <img alt="Vitrine de notre boutique" class="banner__image" loading="lazy" src="./assets/images/boutique_la_salumeria.webp">
             <div class="banner__text">
-                <h1 class="banner__text--title">La Salumeria</h1>
-                <h2 class="banner__text--description">Épicerie italienne depuis 1955</h2>
+                <h1 class="banner__text--title heading">La Salumeria</h1>
+                <h2 class="banner__text--description heading">Épicerie italienne depuis 1955</h2>
             </div>
         </div>
-        <div class="container__block">
-
-        </div>
-    </main>
+        <section id="epicerie">
+            <h2 class="heading section__heading">L'épicerie</h2>
+            <div class="container__block">
+                
+            </div>
+        </section>
+        <section id="produits">
+            <h2 class="heading section__heading">Les produits</h2>
+            <div class="container__block">
+                
+            </div>
+        </section>
+        <section id="equipe">
+            <h2 class="heading section__heading">L'équipe</h2>
+        </section>
+        <section id="contact">
+            <h2 class="heading section__heading">Contact</h2>
+            <div class="container__block">
+                <div class="contact__infos">
+                    <p class="contact__address">
+                        La Salumeria
+                        <br>
+                        2 rue du Colisée
+                        <br>
+                        33000 Bordeaux                    
+                    </p>
+                    <p class="contact__hours">
+                        Ouvert du lundi au samedi de 9h30 à 19h
+                </p>
+                </div>
+                <img alt="Localisation maps" class="contact__map" loading="lazy" src="./assets/images/localisation.webp">
+                <h3 class="contact__heading">Contactez-nous</h3>
+                <form action="#" class="contact__form" method="POST">
+                    <label class="contact__label" for="contact__mail">Votre adresse email</label>
+                    <input class="contact__field" id="contact__mail" name="contact__mail" placeholder="exemple@mail.com" required type="text">
+                    <label class="contact__label" for="contact__message">Votre message</label>
+                    <textarea class="contact__field" id="contact__message" name="contact__message" placeholder="Ecrire votre message ici" required></textarea>
+                    <input class="btn btn--contact" type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+   </main>
 
     <footer class="footer__block">
         <div class="footer__socials_link">

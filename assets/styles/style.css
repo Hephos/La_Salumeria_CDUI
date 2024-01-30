@@ -16,6 +16,7 @@
     --salumeria-text: "Bodoni Moda", serif;
     --salumeria-title: "Italiana", sans-serif;
     --salumeria-white: #FFFFFF;
+    --salumeria-yellow: #DAD1C1;
 }
 
 
@@ -33,6 +34,19 @@ body {
 }
 
 
+/** Headings **/
+.heading {
+    font-family: var(--salumeria-title);
+}
+
+.section__heading {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 20px 40px;
+    padding-top: 25px;
+}
+
+
 /** Link **/
 .link {
     color: var(--salumeria-black);
@@ -40,6 +54,24 @@ body {
 }
 .link:hover {
     color: var(--salumeria-red);
+}
+
+
+/** Buttons **/
+.btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 50px;
+    margin: auto;
+    padding: 5px 20px;
+    transition: 0.5s;
+    width: 250px;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--salumeria-red);
+    cursor: pointer;
 }
 
 
@@ -73,7 +105,6 @@ body {
 
 /** Main **/
 .main__block {
-    background-color: black;
     flex: 1 0 auto;
 }
 
@@ -84,7 +115,7 @@ body {
 
 .banner__image {
     height: 100vh;
-    max-height: 500px;
+    max-height: 650px;
     object-fit: cover;
     width: 100%;
 }
@@ -105,7 +136,6 @@ body {
 
 .banner__text--title,
 .banner__text--description {
-    font-family: var(--salumeria-title);
     font-weight: normal;
     opacity: 0.7;
 }
@@ -115,7 +145,71 @@ body {
 .container__block {
     margin: auto;
     padding: 20px 0;
-    width: 95vw;
+    width: 90vw;
+}
+
+
+/** Contact **/
+#contact {
+    background-color: var(--salumeria-yellow);
+    padding-bottom: 30px
+}
+#contact > .container__block {
+    background-color: var(--salumeria-white);
+}
+
+/* Informations */
+.contact__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.contact__address {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Maps */
+.contact__map {
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Form */
+.contact__heading {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    padding: 0 5vw;
+    width: 90vw;
+}
+
+.contact__label {
+    font-weight: bold;
+}
+
+.contact__field {
+    font-size: 16px;
+    padding: 20px;
+}
+
+textarea.contact__field {
+    min-height: 150px;
+    resize: none;
+}
+
+.btn--contact {
+    background-color: var(--salumeria-yellow);
 }
 
 
