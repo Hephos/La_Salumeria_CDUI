@@ -11,18 +11,17 @@
     --salumeria-black: #161615;
     --salumeria-green: #1C562C;
     --salumeria-green-alpha: rgba(28, 86, 44, 0.7);
-    --salumeria--grey: #F4F4F4;
     --salumeria-red: #850A0F;
     --salumeria-red-alpha: rgba(133, 10, 15, 0.7);    
-    --salumeria-title: "Bodoni Moda", serif;
-    --salumeria-text: "Italiana", sans-serif;
+    --salumeria-text: "Bodoni Moda", serif;
+    --salumeria-title: "Italiana", sans-serif;
     --salumeria-white: #FFFFFF;
 }
 
 
 /** Fonts **/
 * {
-    font-family: "Bodoni Moda", serif;
+    font-family: var(--salumeria-text);
 }
 
 
@@ -58,13 +57,13 @@ body {
 /* Logo */
 .header__logo {
     object-fit: contain;
-    width: 300px;
+    width: 250px;
 }
 
 /* Navigation */
 .nav__mobile_logo {
     display: flex;
-    width: 35px;
+    width: 30px;
 }
 
 .nav__list {
@@ -74,14 +73,54 @@ body {
 
 /** Main **/
 .main__block {
+    background-color: black;
     flex: 1 0 auto;
+}
+
+/* Banner */
+.main__banner {
+    position: relative;
+}
+
+.banner__image {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner__text {
+    background: var(--salumeria-red-alpha);
+    color: var(--salumeria-white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    height: 115px;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: calc((70% - 115px) - (10px * 1/2));
+    width: 75vw;
+}
+
+.banner__text--title,
+.banner__text--description {
+    font-family: var(--salumeria-title);
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+
+/** Container **/
+.container__block {
+    margin: auto;
+    padding: 20px 0;
+    width: 95vw;
 }
 
 
 /** Footer **/
 .footer__block {
     align-content: center;
-    background-color: var(--salumeria--grey);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
