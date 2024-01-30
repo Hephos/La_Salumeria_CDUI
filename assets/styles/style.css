@@ -215,7 +215,7 @@ body {
     right: 25px;
     top: 25px;
     background-color: var(--salumeria-black-alpha);
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 20px;
 }
 
@@ -292,6 +292,7 @@ body {
     flex-direction: column;
     font-size: 18px;
     gap: 15px;
+    padding: 0 10px;
     text-align: center;
 }
 
