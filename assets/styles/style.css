@@ -157,6 +157,43 @@ body {
 }
 
 
+/** Footer **/
+.footer__block {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 5vw;
+    width: 100%;
+}
+
+/* Social media */
+.footer__socials {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.footer__socials_logo {
+    height: 40px;
+    width: 40px;
+}
+
+/* Informations */
+.footer__informations {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+/*** Home ***/
 /** Grocery **/
 .grocery__image {
     max-height: 600px;
@@ -343,37 +380,4 @@ textarea.contact__field {
 }
 
 
-/** Footer **/
-.footer__block {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    padding: 20px 5vw;
-    width: 100%;
-}
-
-/* Social media */
-.footer__socials {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.footer__socials_logo {
-    height: 40px;
-    width: 40px;
-}
-
-/* Informations */
-.footer__informations {
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 0;
-    justify-content: space-around;
-    width: 100%;
-}
+/** Responsive **/
