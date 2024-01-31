@@ -63,11 +63,23 @@ body {
 
 /** Links **/
 .link {
+    border-bottom: 1px solid transparent;
     color: var(--salumeria-black);
     text-decoration: none;
+    transition: 0.5s;
 }
 .link:hover {
+    border-bottom-color: var(--salumeria-green-alpha);
     color: var(--salumeria-red);
+}
+
+
+/** Icons **/
+.icon {
+    transition: 0.5s;
+}
+.icon:hover {
+    filter: grayscale(1);
 }
 
 
