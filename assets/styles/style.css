@@ -140,7 +140,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 85vw;
+    width: 75vw;
 }
 
 .banner__title,
@@ -364,17 +364,17 @@ body {
 }
 
 /* Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
 .contact__heading {
     font-weight: bold;
     font-size: 35px;
     margin: 20px;
     text-align: center;
-}
-
-.contact__form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px 0;
 }
 
 .contact__label {
@@ -507,25 +507,32 @@ textarea.contact__field {
     .contact__content {
         align-items: stretch;
         display: flex;
-        justify-content: space-between;
+        gap: 50px;
+        justify-content: center;
     }
 
     /* Informations */
     .contact__infos {
-        font-size: 24px;
+        flex: 1 0 calc((100% / 3) - (50px * 2/3));
+        font-size: 30px;
         justify-content: space-around;
     }
 
     /* Maps */
     .contact__map {
+        flex: 1 0 calc((100% / 3) - (50px * 2/3));
         margin-top: 0;
-        width: 400px;
     }
 
     /* Form */
+    .contact__form {
+        flex: 1 0 calc((100% / 3) - (50px * 2/3));
+    }
+
     .contact__heading {
         margin: 0 20px;
     }
+    
 
     /** Footer **/
     .footer__block {
