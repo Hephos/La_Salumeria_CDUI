@@ -583,6 +583,13 @@ textarea.contact__field {
     background: var(--salumeria-green-alpha);
 }
 
+.products__block:nth-child(odd) {
+    background-color: var(--salumeria-green);
+}
+.products__block:nth-child(odd) > .section__heading {
+    color: var(--salumeria-yellow);
+}
+
 /* Grid */
 .shop__products__list {
     display: grid;
@@ -592,6 +599,7 @@ textarea.contact__field {
 }
 
 .shop__product {
+    background-color: var(--salumeria-white);
     border: 1px solid var(--salumeria-black);
     display: flex;
     flex-direction: column;
