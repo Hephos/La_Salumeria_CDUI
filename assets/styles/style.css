@@ -334,6 +334,7 @@ body {
     background-color: var(--salumeria-yellow);
     padding-bottom: 40px
 }
+
 #contact > .container__block {
     background-color: var(--salumeria-white);
 }
@@ -493,23 +494,34 @@ textarea.contact__field {
 
 
     /** Contact **/
+    #contact > .container__block {
+        padding: 10px 0;
+    }
+
     .contact__content {
         align-items: center;
         display: flex;
         justify-content: space-between;
     }
 
+    /* Informations */
     .contact__infos {
         font-size: 24px;
         justify-content: space-between;
         padding-right: 0;
     }
 
+    /* Maps */
     .contact__map {
         height: 400px;
+        margin-top: 0;
         width: 400px;
     }
 
+    /* Form */
+    .contact__heading {
+        margin: 0 20px;
+    }
 
     /** Footer **/
     .footer__block {
