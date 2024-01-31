@@ -422,6 +422,10 @@ textarea.contact__field {
 
 
     /** Banner **/
+    .banner__container {
+        padding-left: 50px;
+    }
+
     .banner__title {
         font-size: 115px;
         font-weight: normal;
