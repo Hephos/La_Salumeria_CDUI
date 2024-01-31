@@ -547,4 +547,10 @@ textarea.contact__field {
         flex-direction: row-reverse;
         flex-wrap: unset;
     }
+
+    /* Social media */
+    .footer__socials {
+        gap: 0 50px;
+        justify-content: end;
+    }
 }
