@@ -134,12 +134,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px 0;
-    height: 115px;
     justify-content: center;
+    min-height: 115px;
     padding: 20px;
     position: absolute;
-    top: calc((70% - 115px) - (10px * 1/2));
-    width: 75vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 85vw;
 }
 
 .banner__title,
@@ -196,7 +197,7 @@ body {
 /*** Home ***/
 /** Grocery **/
 .grocery__image {
-    max-height: 600px;
+    max-height: 500px;
     object-fit: cover;
     width: 100%;
 }
@@ -232,7 +233,8 @@ body {
 .products__list {
     display: flex;
     flex-direction: column;
-    gap: 25px 0;
+    flex-wrap: wrap;
+    gap: 25px;
     margin-bottom: 25px;
 }
 
@@ -261,6 +263,9 @@ body {
 /* Product - Footer */
 .product__footer {
     background-color: var(--salumeria-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
     text-align: center;
 }
@@ -285,7 +290,15 @@ body {
     padding-top: 0;
 }
 
+.teams__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
 .team__photography {
+    display: flex;
     max-height: 400px;
     object-fit: cover;
     object-position: top;
@@ -358,7 +371,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px 0;
-    padding: 0 5%;
+    padding: 0 25px;
 }
 
 .contact__label {
@@ -381,3 +394,126 @@ textarea.contact__field {
 
 
 /** Responsive **/
+@media screen and (min-width: 992px) {
+    /** Headings **/
+    .section__heading {
+        font-size: 50px;
+    }
+
+    /** Header **/
+    /* Navigation */
+    .nav__mobile_logo {
+        display: none;
+    }
+
+    .nav__list {
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        gap: 0 20px;
+        list-style: none;
+    }
+
+    .nav__icon {
+        display: flex;
+        width: 25px;
+    }
+
+
+    /** Banner **/
+    .banner__title {
+        font-size: 115px;
+        font-weight: normal;
+    }
+
+    .banner__description {
+        font-size: 50px;
+    }
+
+
+    /** Products **/
+    .product__background {
+        height: 100%;
+    }
+
+    .products__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product {
+        flex: 1 0 calc((100% / 3) - (25px * 2 /3));
+    }
+
+    /* Product - Header */
+    .product__header {
+        height: 70%;
+    }
+
+    .product__image {
+        height: 100%;
+    }
+
+    /* Product - Footer */
+    .product__footer {
+        height: 30%;
+    }
+
+    /* Product - Button */
+    .btn--product {
+        background-color: var(--salumeria-white);
+        color: var(--salumeria-red);
+    }
+    .btn--product:hover {
+        border-color: var(--salumeria-white);
+        color: var(--salumeria-white);
+    }
+
+
+    /** Teams **/
+    #teams > .section__heading {
+        padding-top: 25px;
+    }
+
+    .teams__list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .team {
+        flex: 1 0 calc((50%) - (25px * 1/2));
+    }
+
+    .team__name {
+        font-size: 32px;
+        justify-content: center;
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+
+    /** Contact **/
+    .contact__content {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact__infos {
+        font-size: 24px;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .contact__map {
+        height: 400px;
+        width: 400px;
+    }
+
+
+    /** Footer **/
+    .footer__block {
+        flex-direction: row-reverse;
+        flex-wrap: unset;
+    }
+}
