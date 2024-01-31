@@ -16,35 +16,45 @@
             <img alt="Menu du site" class="nav__mobile_logo" loading="lazy" src="./assets/images/icones/menu.svg">
             <ul class="nav__list">
                 <li>
-                    <a href="#grocery">L'épicerie</a>
+                    <a class="link" href="#grocery">L'épicerie</a>
                 </li>
                 <li>
-                    <a href="#products">Les produits</a>
+                    <a class="link"href="#products">Les produits</a>
                 </li>
                 <li>
-                    <a href="#teams">L'équipe</a>
+                    <a class="link" href="#teams">L'équipe</a>
                 </li>
                 <li>
-                    <a href="./pages/shop.html">Le shop</a>
+                    <a class="link" href="./pages/shop.html">Le shop</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="link" href="#contact">Contact</a>
                 </li>
                 <li>
-                    <!--<a href="#">
-                        <img alt="Panier d'achats" loading="lazy" src="./assets/images/icones/panier.svg">
-                    </a>-->
+                    <a class="link" href="#">
+                        <img alt="Panier d'achats" class="nav__icon" loading="lazy" src="./assets/images/icones/panier.svg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img alt="Page Facebook" class="nav__icon" loading="lazy" src="./assets/images/icones/facebook.svg">
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img alt="Page Instagram" class="nav__icon" loading="lazy" src="./assets/images/icones/instagram.svg">
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="main__block">
-        <div class="main__banner">
+        <div class="banner">
             <img alt="Vitrine de notre boutique" class="banner__image" loading="lazy" src="./assets/images/boutique_la_salumeria.webp">
-            <div class="banner__text">
-                <h1 class="banner__text--title heading">La Salumeria</h1>
-                <h2 class="banner__text--description heading">Épicerie italienne depuis 1955</h2>
+            <div class="banner__container">
+                <h1 class="banner__title heading">La Salumeria</h1>
+                <h2 class="banner__description heading">Épicerie italienne depuis 1955</h2>
             </div>
         </div>
         <section id="grocery">
@@ -68,7 +78,7 @@
                     <div class="product">
                         <div class="product__header">
                             <img alt="Lorem" class="product__image" loading="lazy" src="./assets/images/assortiment_de_pates.webp">
-                            <span class="product__image_name">Pasta</span>
+                            <span class="product__name">Pasta</span>
                         </div>
                         <div class="product__footer">
                             <p class="product__description">
@@ -79,7 +89,7 @@
                     <div class="product">
                         <div class="product__header">
                             <img alt="Lorem" class="product__image" loading="lazy" src="./assets/images/plancha_aperitif.webp">
-                            <span class="product__image_name">Antipasti</span>
+                            <span class="product__name">Antipasti</span>
                         </div>
                         <div class="product__footer">
                             <p class="product__description">
@@ -90,7 +100,7 @@
                     <div class="product">
                         <div class="product__header">
                             <img alt="Lorem" class="product__image" loading="lazy" src="./assets/images/verre_bouteille_vin.webp">
-                            <span class="product__image_name">Vins & Spiritueux</span>
+                            <span class="product__name">Vins & Spiritueux</span>
                         </div>
                         <div class="product__footer">
                             <p class="product__description">
@@ -104,21 +114,21 @@
         </section>
         <section id="teams">
             <h2 class="heading section__heading">L'équipe</h2>
-            <div class="container__block team">
-                <img alt="Barista men" class="team__photography" loading="lazy" src="./assets/images/barista.webp">
-                <span class="team__name">Sergio</span>
-                <p class="team__quote">
-                    "Per ben condire l'insalata, ci vuole un avaro per l'aceto, un giusto per il sale e un pazzo per l'olio"
-                </p>
-                <p class="team__tip">
-                    Pour bien assaisonner la salade, il faut être avare sur le vinaigre, être juste sur le sel et être généreux sur l'huile.
-                </p>
-                <p class="team__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ratione. Iure ipsa non ducimus excepturi molestiae, doloremque veritatis eum ipsam incidunt, nam, nisi numquam voluptates. Harum velit dolorem ab ratione soluta? Accusamus quidem, dolorem consectetur omnis est non. Aliquam recusandae aperiam minus repellendus. Praesentium, labore dolores dicta eligendi minus deserunt hic explicabo soluta voluptas delectus dolore! Consequatur omnis veritatis voluptatem dolores amet voluptatibus nihil porro ea doloremque, qui ad distinctio illo, sit minima temporibus ducimus, quos et? Sequi quibusdam iure ipsum perspiciatis ex earum esse praesentium aspernatur eius atque, fugiat deleniti quaerat illum. Nam veritatis fugit voluptate aspernatur vitae commodi!
-                </p>
-            </div>
-            <div class="team">
-                <div class="container__block team">
+            <div class="container__block">
+                <div class="team">
+                    <img alt="Barista men" class="team__photography" loading="lazy" src="./assets/images/barista.webp">
+                    <span class="team__name">Sergio</span>
+                    <p class="team__quote">
+                        "Per ben condire l'insalata, ci vuole un avaro per l'aceto, un giusto per il sale e un pazzo per l'olio"
+                    </p>
+                    <p class="team__tip">
+                        Pour bien assaisonner la salade, il faut être avare sur le vinaigre, être juste sur le sel et être généreux sur l'huile.
+                    </p>
+                    <p class="team__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ratione. Iure ipsa non ducimus excepturi molestiae, doloremque veritatis eum ipsam incidunt, nam, nisi numquam voluptates. Harum velit dolorem ab ratione soluta? Accusamus quidem, dolorem consectetur omnis est non. Aliquam recusandae aperiam minus repellendus. Praesentium, labore dolores dicta eligendi minus deserunt hic explicabo soluta voluptas delectus dolore! Consequatur omnis veritatis voluptatem dolores amet voluptatibus nihil porro ea doloremque, qui ad distinctio illo, sit minima temporibus ducimus, quos et? Sequi quibusdam iure ipsum perspiciatis ex earum esse praesentium aspernatur eius atque, fugiat deleniti quaerat illum. Nam veritatis fugit voluptate aspernatur vitae commodi!
+                    </p>
+                </div>
+                <div class="team">
                     <img alt="Barista men" class="team__photography" loading="lazy" src="./assets/images/hotesse_boutique_la_salumeria.webp">
                     <span class="team__name">Carolina</span>
                     <p class="team__quote">
@@ -144,9 +154,9 @@
                         <br>
                         33000 Bordeaux                    
                     </p>
-                    <p class="contact__hours">
+                    <p>
                         Ouvert du lundi au samedi de 9h30 à 19h
-                </p>
+                    </p>
                 </div>
                 <img alt="Localisation maps" class="contact__map" loading="lazy" src="./assets/images/localisation.webp">
                 <h3 class="contact__heading heading">Contactez-nous</h3>

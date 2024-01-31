@@ -21,12 +21,6 @@
 }
 
 
-/** Fonts **/
-* {
-    font-family: var(--salumeria-text);
-}
-
-
 /** General **/
 body {
     display: flex;
@@ -36,27 +30,9 @@ body {
 }
 
 
-/** Headings **/
-.heading {
-    font-family: var(--salumeria-title);
-}
-
-.section__heading {
-    font-size: 32px;
-    font-weight: normal;
-    margin: 10px auto;
-    padding-top: 25px;
-    width: 85vw;
-}
-
-
-/** Link **/
-.link {
-    color: var(--salumeria-black);
-    text-decoration: none;
-}
-.link:hover {
-    color: var(--salumeria-red);
+/** Content **/
+* {
+    font-family: var(--salumeria-text);
 }
 
 
@@ -79,6 +55,30 @@ body {
     background-color: transparent;
     border: 1px solid var(--salumeria-red);
     cursor: pointer;
+}
+
+
+/** Links **/
+.link {
+    color: var(--salumeria-black);
+    text-decoration: none;
+}
+.link:hover {
+    color: var(--salumeria-red);
+}
+
+
+/** Headings **/
+.heading {
+    font-family: var(--salumeria-title);
+}
+
+.section__heading {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 10px auto;
+    padding-top: 25px;
+    width: 85vw;
 }
 
 
@@ -115,8 +115,9 @@ body {
     flex: 1 0 auto;
 }
 
-/* Banner */
-.main__banner {
+
+/** Banner **/
+.banner {
     position: relative;
 }
 
@@ -127,7 +128,7 @@ body {
     width: 100%;
 }
 
-.banner__text {
+.banner__container {
     background: var(--salumeria-red-alpha);
     color: var(--salumeria-white);
     display: flex;
@@ -141,8 +142,8 @@ body {
     width: 75vw;
 }
 
-.banner__text--title,
-.banner__text--description {
+.banner__title,
+.banner__description {
     font-weight: normal;
     opacity: 0.7;
 }
@@ -208,16 +209,16 @@ body {
     width: 100%;
 }
 
-.product__image_name {
+.product__name {
+    background-color: var(--salumeria-black-alpha);
+    border-radius: 20px;
     color: var(--salumeria-yellow);
     font-size: 24px;
     font-style: italic;
+    padding: 5px 10px;
     position: absolute;
     right: 25px;
-    top: 25px;
-    background-color: var(--salumeria-black-alpha);
-    padding: 5px 10px;
-    border-radius: 20px;
+    top: 25px; 
 }
 
 /* Product - Footer */
@@ -355,7 +356,7 @@ textarea.contact__field {
 }
 
 /* Social media */
-.footer__socials_link {
+.footer__socials {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
