@@ -353,8 +353,9 @@ body {
     text-align: center;
 }
 
-.contact__address {
+.contact__address > p {
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 /* Maps */
