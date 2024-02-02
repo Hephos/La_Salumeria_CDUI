@@ -100,12 +100,17 @@ body {
 /** Header **/
 .header__block {
     align-items: center;
+    background-color: var(--salumeria-white);
     display: flex;
+    filter: drop-shadow(0 0 5px var(--salumeria-black));
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100px;
     margin: auto;
-    padding: 20px 0;
-    width: 90vw;
+    padding: 20px 5vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
 
 /* Logo */
@@ -128,6 +133,7 @@ body {
 /** Main **/
 .main__block {
     flex: 1 0 auto;
+    margin-top: 100px;
 }
 
 
@@ -170,6 +176,12 @@ body {
     margin: auto;
     padding: 20px 0;
     width: 90vw;
+}
+
+
+/** Sections **/
+.section__block {
+    scroll-margin-top: 100px;
 }
 
 
@@ -239,7 +251,7 @@ body {
 }
 
 #products > .section__heading {
-    color: var(--salumeria-white);
+    color: var(--salumeria-yellow);
 }
 
 .product__background {
